@@ -1,0 +1,17 @@
+@use"../../Scss/mixin";
+@use"../../Scss/vars";
+@use"../../Scss/reset";
+
+.header{
+    @include mixin.Flex(row,space-around,center,80px);
+    &-buttons{
+        @include mixin.Flex(row,center,center,30px);
+        &__btn{
+            @include mixin.Heebo(30px,700,130%);
+            background-color: vars.$first-color;
+            color: vars.$bg-color;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use "../../../Scss/mixin";
+@use"../../../Scss/vars";
+@use"../../../Scss/reset";
+
+.nav{
+    &__list{
+        @include mixin.Flex(row,center,center,80px);
+    }
+    &__link{
+        @include mixin.Heebo(32px,500,47px);
+        color: vars.$second-color;
+    }
+    &__link:hover{
+        color: vars.$first-color;
+    }
+}
