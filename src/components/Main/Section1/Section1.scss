@@ -1,0 +1,57 @@
+@use "../../../Scss/mixin";
+@use"../../../Scss/vars";
+@use"../../../Scss/reset";
+
+.section1{
+    @include mixin.Flex(column,center,center,80px);
+    padding-top:70px;
+    background-color: vars.$third-color;
+    &-container{
+        @include mixin.Flex(column,center,center,25px);
+        &__title{
+            @include mixin.Heebo(68px,400,130%);
+            color: vars.$bg-color;
+            text-align: center;
+            width: 50%;
+        }
+        &__text{
+            @include mixin.Heebo(24px,400,130%);
+            color: vars.$second-color;
+            text-align: center;
+            width: 66%;
+        }
+        &__btn{
+            @include mixin.Heebo(30px,700,130%);
+            background-color: vars.$first-color;
+            color: vars.$bg-color;
+            padding: 18px 89px;
+            border-radius: 50px;    
+        }
+    } 
+    &-container2{
+        padding: 120px 40px;
+        @include mixin.Flex(row,center,center,80px);
+        background-color: vars.$fourth-color;
+        .section1-box{
+            @include mixin.Flex(column,center,center,25px);
+            background-color: vars.$bg-color;
+            padding: 50px;
+            &__text1{
+                @include mixin.Heebo(32px,500,130%);
+                color: vars.$second-color;
+            }
+            &__text2{
+                @include mixin.Heebo(24px,400,130%);
+                color: vars.$second-color;
+                text-align: center;
+            }
+            &__btn{
+                @include mixin.Heebo(30px,700,130%);
+                background-color: vars.$first-color;
+                color: vars.$bg-color;
+                padding: 12px 44px;
+                border-radius: 50px;    
+            }
+        }
+    }  
+}     
