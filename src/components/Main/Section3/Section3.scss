@@ -1,0 +1,45 @@
+@use "../../../Scss/mixin";
+@use "../../../Scss/reset";
+@use "../../../Scss/vars";
+
+.section3{
+    @include mixin.Flex(column,center,center,130px);
+    padding-top: 60px;
+    background-color: vars.$fourth-color;
+    &-textbox{
+        @include mixin.Flex(column,center,center,22px);
+        &__title{
+            @include mixin.Heebo(54px,400,130%);
+            color: vars.$second-color;
+        }
+        &__text{
+            @include mixin.Heebo(24px,400,130%);
+            color: vars.$second-color;
+            text-align: center;
+            width: 88%;
+        }
+    }
+    &-container{
+        @include mixin.Flex(row,space-around,center,0px);
+        width: 100%;
+        padding: 0px 100px;
+        .section3-wrap{
+            @include mixin.Flex(column,flex-start,flex-start,52px);
+            .section3-box{
+                @include mixin.Flex(row,space-around,center,163px);
+                border: 2px solid vars.$bg-color;
+                &__textbox{
+                    @include mixin.Flex(column,flex-start,flex-start,10px);
+                    &-text1{
+                        @include mixin.Heebo(32px,500,47px);
+                        color: vars.$second-color;
+                    }
+                    &__text2{
+                        @include mixin.Heebo(24px,400,130%);
+                        color: vars.$second-color;
+                    }
+                }
+            }
+        }
+    }
+}
