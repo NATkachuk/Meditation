@@ -1,0 +1,56 @@
+@use "../../../Scss/mixin";
+@use "../../../Scss/vars";
+@use "../../../Scss/reset";
+
+.section4{
+    @include mixin.Flex(column,center,center,0);
+    padding: 86px 100px;
+    background-color: vars.$first-color;
+    &-textbox{
+        @include mixin.Flex(column,center,center,22px);
+        &__title{
+            @include mixin.Heebo(54px,400,130%);
+            color: vars.$second-color;
+        }
+        &__text{
+            @include mixin.Heebo(24px,400,130%);
+            color: vars.$second-color;
+        }
+    }
+    &-wrap{
+        @include mixin.Flex(row,space-around,center,100px);
+        padding-top: 50px;
+        .section4-container1{
+            @include mixin.Flex(column,center,center,100px);
+            &__box{
+                @include mixin.Flex(column,center,center,10px);
+                border-color: 2px solid vars.$second-color;
+                background-color: vars.$third-color;
+                &-text1{
+                    @include mixin.Heebo(32px,500,47px);
+                    color:vars.$second-color;
+                }
+                &-text2{
+                    @include mixin.Heebo(24px,400,130%);
+                    color: vars.$second-color;
+                }
+            }
+        }
+        .section4-container2{
+            @include mixin.Flex(column,center,center,100px);
+            &__box{
+                @include mixin.Flex(column,center,center,10px);
+                border-color: 2px solid vars.$second-color;
+                background-color: vars.$third-color;
+                &-text1{
+                    @include mixin.Heebo(32px,500,47px);
+                    color:vars.$second-color;
+                }
+                &-text2{
+                    @include mixin.Heebo(24px,400,130%);
+                    color: vars.$second-color;
+                }
+            }
+        }
+    }
+}
