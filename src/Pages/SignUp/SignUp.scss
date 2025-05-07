@@ -1,0 +1,30 @@
+@use "../../Scss/mixin";
+@use "../../Scss/vars";
+@use "../../Scss/reset";
+
+.main {
+    @include mixin.Flex(column,center,center,0);
+    padding: 100px
+}
+.sign-up{
+    @include mixin.Flex(column,center,center,30px);
+    padding: 80px 100px;
+    &__title{
+        @include mixin.Heebo(54px,400,130%);
+        color: vars.$second-color;
+    }
+    &__input{
+        @include mixin.Flex(column,center,center,30px);
+        border: 2px solid vars.$second-color;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    &__btn{
+        @include mixin.Heebo(30px,700,130%);
+        background-color: vars.$first-color;
+        color: vars.$bg-color;
+        padding: 12px 44px;
+        border-radius: 50px;    
+    }
+
+}

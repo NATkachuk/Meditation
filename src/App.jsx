@@ -9,11 +9,11 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='/meditation'>
+      <BrowserRouter basename='/Meditation/'>
         <Routes>
           <Route path="/" element={<Layout />} />
-          <Route path='SignUp' element={<SignUp/>} />
-          <Route path='SignIn' element={<SignIn/>} />
+          <Route path='/SignUp' element={<SignUp/>} />
+          <Route path='/SignIn' element={<SignIn/>} />
         </Routes>
       </BrowserRouter>
     </>
