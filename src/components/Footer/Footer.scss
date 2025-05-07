@@ -1,0 +1,12 @@
+@use "../../Scss/mixin";
+@use "../../Scss/vars";
+@use "../../Scss/reset";
+
+.footer{
+    @include mixin.Flex(column,center,center,80px);
+    background-color: vars.$third-color;
+    padding: 80px 100px;
+    &-socials{
+        @include mixin.Flex(row,center,center,30px);
+    }
+}
